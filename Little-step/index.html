@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Little Steps | Feed a child at school in Musanze, Rwanda</title>
+<meta name="description" content="Sponsor a child's school meals for a whole year for about 5 USD. A charity program of STEP UP HUB, Musanze, Rwanda.">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap"><nav>
+<a class="logo" href="#top" aria-label="Little Steps home"><svg class="mark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Little Steps logo"><rect x="6" y="46" width="16" height="12" rx="3" fill="#7FBF9B"/><rect x="25" y="38" width="16" height="20" rx="3" fill="#3E9266"/><rect x="44" y="30" width="16" height="28" rx="3" fill="#17603F"/><path d="M52 24C52 24 42 17 42 11C42 7.5 44.5 5.5 47.2 5.5C49.4 5.5 51.2 6.8 52 8.6C52.8 6.8 54.6 5.5 56.8 5.5C59.5 5.5 62 7.5 62 11C62 17 52 24 52 24Z" fill="#FFC72C"/></svg><span>Little Steps</span></a>
+<ul><li><a href="#home">Home</a></li><li><a href="#programs">Programs</a></li><li><a href="#gallery">Gallery</a></li><li><a href="#children">Children</a></li><li><a href="#sponsor">Sponsor</a></li><li><a class="navjoin" href="#join">Join STEP UP HUB</a></li></ul>
+</nav></div></header>
+
+<main id="top">
+<section class="hero" data-page="home"><div class="wrap row">
+<div>
+<h1>One small step. <span>One full year of school meals.</span></h1>
+<p>For about 5 USD (7,250 RWF), you can feed a child at school for all three terms. Children in Musanze can learn without hunger, and you see the difference.</p>
+<div class="btns"><a class="btn" href="#sponsor">Feed a child</a><a class="btn alt" href="#join">Join STEP UP HUB</a></div>
+</div>
+<div><img class="hero-img" src="images/hero.jpg" data-ph="Hero photo: children at school" alt="Children eating a school meal in Musanze"><div class="badge"><b id="fedNow"></b><span>children fed at school today</span></div></div>
+</div></section>
+
+<section class="mist" id="how" data-page="home"><div class="wrap">
+<h2>Why children need your help</h2>
+<p>Many families around Gahondogo and Bukane primary schools cannot afford school feeding. Children study hungry or stay home. Little Steps makes it easy to change that, with clear prices and real updates.</p>
+<div class="grid g3 steps">
+<div class="card"><h3>Choose how many children</h3><p>Pick one child or many. Each child's meals for the year cost 7,250 RWF.</p></div>
+<div class="card"><h3>Give by Mobile Money or card</h3><p>Send your gift in a way that is easy for you, in Rwanda or abroad.</p></div>
+<div class="card"><h3>See the impact</h3><p>Every term you get photos, short videos and a simple report of what was received and spent.</p></div>
+</div>
+<div class="gallery">
+<img src="images/meal.jpg" data-ph="Photo: school meal time" alt="Children sharing a school meal" loading="lazy">
+<img src="images/school.jpg" data-ph="Photo: Gahondogo school" alt="Gahondogo primary school" loading="lazy">
+<img src="images/class.jpg" data-ph="Photo: children in class" alt="Children learning in class" loading="lazy">
+</div></div></section>
+
+<section id="sponsor" data-page="sponsor"><div class="wrap">
+<h2>Sponsor a child today</h2>
+<p>Choose the number of children and how long you want to support them. You can also give any amount you wish.</p>
+<div class="calc">
+<div>
+<h3>Build your gift</h3>
+<label for="n">Number of children: <b id="nv">1</b></label>
+<input type="range" id="n" min="1" max="30" value="1">
+<label>Support for</label>
+<div class="seg" id="plan"><button class="on" data-p="year">Full year (3 terms)</button><button data-p="term">One term</button></div>
+<label>Or give your own amount</label>
+<div class="seg" id="mode"><button class="on" data-m="kids">Per child</button><button data-m="custom">Any amount</button></div>
+<input type="number" id="custom" min="1000" step="500" placeholder="Amount in RWF" style="margin-top:.7rem;width:100%;padding:.7rem;border-radius:10px;border:0;display:none;font:1rem Nunito,sans-serif">
+</div>
+<div class="total">
+<p>Your gift</p>
+<div class="big" id="rwf">7,250 RWF</div>
+<small id="usd">about 5 USD</small>
+<p id="feeds" style="margin-bottom:1rem"></p>
+<input id="who" placeholder="Your name (optional)" autocomplete="name">
+<button class="btn" id="give">Send my pledge on WhatsApp</button>
+</div>
+</div>
+<div class="pay">
+<h3>How to send your gift</h3>
+<p><b>Mobile Money (MTN MoMo):</b> dial <code id="momoCode"></code> and send to <b id="momoName"></b>. Then press the WhatsApp button above so we can thank you and record it.</p>
+<p style="margin-top:.5rem"><b>Card, PayPal or bank transfer:</b> ask us on WhatsApp or <a id="mailLink" href="#">email us</a> and we will send you the details.</p>
+</div>
+</div></section>
+
+<section class="mist" data-page="sponsor"><div class="wrap two">
+<div>
+<h2>Where your money goes</h2>
+<p><b>100% of every sponsor gift goes to school feeding.</b> STEP UP HUB members pay the website and running costs from their own pockets.</p>
+<div class="bar" aria-hidden="true"><i id="fill"></i></div>
+<p><b id="spons"></b> of <b id="goal"></b> children sponsored. Help us reach our goal this year.</p>
+</div>
+<div class="video" data-v="story">Our first video will appear here.</div>
+</div></section>
+
+<section id="children" data-page="children"><div class="wrap">
+<h2>Meet children you can help</h2>
+<p>Children from Gahondogo and Bukane primary schools. Every story is shared with the guardian's consent.</p>
+<div class="grid g3" id="kids"></div>
+<p class="note"><b>Website owner:</b> the children below are samples. Replace them with real children in the <code>CHILDREN</code> list in the code and add their photos to the <code>images</code> folder, only after guardians give written consent.</p>
+</div></section>
+
+<section id="faq" data-page="sponsor"><div class="wrap">
+<h2>Questions sponsors ask</h2>
+<details><summary>Why is it only 5 USD?</summary><p>5 USD (7,250 RWF) covers one child's school feeding for the full year of three terms. You can also pay for one term only, about 2,400 RWF.</p></details>
+<details><summary>Is my whole gift used for the children?</summary><p>Yes. 100% of sponsor gifts goes to school feeding. STEP UP HUB members cover the website and running costs.</p></details>
+<details><summary>How will I know my gift helped?</summary><p>We send a short update with photos or video each term, plus a report that shows how much was received and paid to the schools.</p></details>
+<details><summary>Is it safe for the children?</summary><p>We only share a child's photo or story with the guardian's written consent, and we never share home addresses.</p></details>
+<details><summary>Can my church or business sponsor many children?</summary><p>Yes. Use the slider, or contact us to sponsor a whole class.</p></details>
+</div></section>
+
+<section id="programs" data-page="programs"><div class="wrap">
+<h2>What Little Steps does</h2>
+<p>Each program has its own photos and video. Read below each one to see how it works and how your gift helps.</p>
+<div class="prog"><h3>School feeding</h3><div class="media"><img src="images/meal.jpg" data-ph="Photo: school meal time" alt="Children sharing a school meal" loading="lazy"><div class="video" data-v="feeding">Video coming soon</div></div><p>Every school day, children at Gahondogo and Bukane primary schools get a meal. 5 USD (7,250 RWF) pays for one child for all three terms. Your gift goes straight to the school feeding program, and the treasurer keeps every receipt.</p></div>
+<div class="prog"><h3>Bible study</h3><div class="media"><img src="images/bible.jpg" data-ph="Photo: Bible study" alt="Children at Bible study" loading="lazy"><div class="video" data-v="bible">Video coming soon</div></div><p>STEP UP HUB members lead a Bible study with songs, stories, memory verses and prayer in a safe, friendly space. It is voluntary, and each child needs a guardian's permission.</p></div>
+<div class="prog"><h3>Family visits</h3><div class="media"><img src="images/school.jpg" data-ph="Photo: family visit" alt="Members visiting a family" loading="lazy"><div class="video" data-v="visits">Video coming soon</div></div><p>Members visit the schools and families to understand each child's needs. We write what we learn into the term update so sponsors see the full story.</p></div>
+<p style="margin-top:2rem"><a class="btn" href="#sponsor">Feed a child</a></p>
+</div></section>
+
+<section class="mist" id="gallery" data-page="gallery"><div class="wrap">
+<h2>Gallery</h2>
+<p>Photos from our schools, meals and Bible study. Tap a photo to see it bigger. Every photo is shared with the guardian's consent.</p>
+<div class="filters" id="filters"></div>
+<div class="gal" id="gal"></div>
+<h2 style="margin-top:3rem">Watch</h2>
+<div class="grid g3">
+<div class="card"><div class="video" data-v="g1">Video coming soon</div><h3 style="margin-top:.8rem">A day at school</h3><p>Explain here what viewers see: the walk to school, the meal and the lessons.</p></div>
+<div class="card"><div class="video" data-v="g2">Video coming soon</div><h3 style="margin-top:.8rem">Thank-you messages</h3><p>Explain here: children say thank you to the sponsors who feed them.</p></div>
+</div></div></section>
+
+<section id="join" data-page="join"><div class="wrap join">
+<div>
+<h2>Join STEP UP HUB</h2>
+<p>Create your STEP UP HUB account in 3 short steps. Tell us about you, choose how you want to help, then confirm. We will contact you to finish setting you up.</p>
+<div class="note">We only ask what we need. We never share your details.</div>
+</div>
+<div class="form" id="form">
+<div class="dots"><i class="on"></i><i></i><i></i></div>
+<div class="fstep on"><h3>Step 1: About you</h3>
+<label for="fn">Full name</label><input type="text" id="fn" autocomplete="name">
+<label for="fe">Email</label><input type="email" id="fe" autocomplete="email">
+<label for="fp">Phone or WhatsApp</label><input type="tel" id="fp" autocomplete="tel">
+<label for="fc">Country</label><input type="text" id="fc" placeholder="Rwanda" autocomplete="country-name"></div>
+<div class="fstep"><h3>Step 2: How do you want to help?</h3>
+<div class="roles">
+<label><input type="radio" name="role" value="Sponsor a child"> Sponsor a child</label>
+<label><input type="radio" name="role" value="Volunteer"> Volunteer (visits, photos, Bible study)</label>
+<label><input type="radio" name="role" value="Member of STEP UP HUB"> Become a STEP UP HUB member</label>
+<label><input type="radio" name="role" value="Church or business partner"> Church or business partner</label></div>
+<label for="fm">Message (optional)</label><textarea id="fm" rows="3"></textarea></div>
+<div class="fstep"><h3>Step 3: Confirm</h3>
+<div class="sum" id="sum"></div>
+<label style="display:flex;gap:.6rem;font-weight:400"><input type="checkbox" id="fk"> I agree that STEP UP HUB may contact me about my account.</label></div>
+<div class="fstep" id="done"><h3>Welcome to STEP UP HUB!</h3><p id="doneMsg"></p></div>
+<div class="err" id="err" role="alert"></div>
+<div class="fnav"><button class="btn ghost" id="back" style="display:none">Back</button><button class="btn" id="next">Next</button></div>
+</div></div></section>
+<div class="lb" id="lb"><img alt=""><p></p></div>
+</main>
+
+<footer><div class="wrap cols">
+<div><h3>Little Steps</h3><p>A charity program of STEP UP HUB, Musanze, Rwanda. Feeding children so they can learn.</p></div>
+<div><h3>Contact</h3><p>WhatsApp: <a id="waLink" href="#"></a><br>Email: <a id="mailLink2" href="#"></a></p></div>
+<div><h3>Our promise</h3><p>Clear prices. Honest reports. Child safety first.</p></div>
+</div>
+<div class="wrap" style="margin-top:2rem;font-size:.85rem">© <span id="yr"></span> Little Steps, STEP UP HUB. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
